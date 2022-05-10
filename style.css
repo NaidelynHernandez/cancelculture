@@ -1,0 +1,522 @@
+
+body{
+  font-family: 'DM Serif Display', serif;
+  font-family: 'Oranienbaum', serif;
+
+   background-image: url("https://www.pewresearch.org/internet/wp-content/uploads/sites/9/2021/05/PI_21.04.28_CanceCulture_featured.png");
+  height: 100%;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+}
+
+H1{
+ color: white;
+ font-size: 140px;
+  text-align: center;
+  filter: sepia(100);
+  text-decoration: none;
+}
+
+div.title{
+  animation: glitch .5s linear infinite;
+}
+
+@keyframes glitch{
+  2%,94%{
+    transform: translate(2px,0) skew(0deg);
+  }
+  4%,90%{
+    transform: translate(-2px,0) skew(0deg);
+  }
+  92%{
+    transform: translate(0,0) skew(5deg);
+  }
+}
+
+div.title:before,
+div.title:after{
+  content: attr(title);
+  position: absolute;
+  left: 0;
+}
+
+div.title:before{
+  animation: glitchTop 1s linear infinite;
+  clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+}
+
+@keyframes glitchTop{
+  2%,64%{
+    transform: translate(2px,-2px);
+  }
+  4%,60%{
+    transform: translate(-2px,2px);
+  }
+  62%{
+    transform: translate(13px,-1px) skew(-13deg);
+  }
+}
+
+div.title:after{
+  animation: glitchBotom 1.5s linear infinite;
+  clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+}
+
+@keyframes glitchBotom{
+  2%,94%{
+    transform: translate(-2px,0);
+  }
+  4%,60%{
+    transform: translate(-2px,0);
+  }
+  62%{
+    transform: translate(-22px,5px) skew(21deg);
+  }
+}
+
+.horror-text6{
+  color: #D11149;
+}
+
+
+
+
+
+.horror-text1 {
+ text-decoration: none;
+color: #6610F2;
+
+}
+
+.horror-text2{
+ position: absolute;
+ transform: rotate(-20deg);
+ width: 100%;
+ top: 90%;
+ color: #E6C229;
+
+}
+
+.horror-text3{
+ position: absolute;
+ transform: rotate(20deg);
+ width: 100%;
+ top: 90%;
+ color: #F17105;
+
+}
+
+.horror-text4{
+ position: absolute;
+ transform: rotate(-20deg);
+ width: 100%;
+ top: 160%;
+color: #D11149;
+}
+
+.horror-text5{
+ position: absolute;
+ transform: rotate(20deg);
+ width: 100%;
+ top: 160%;
+ color: #6610F2;
+}
+
+.about{
+
+  flex-direction: column;
+  background-color: #6D4C3D;
+  justify-content: center;
+/*  margin-left: 120px; */
+
+   color: white;
+   font-size: 25px;
+   width: 100%;
+   length: 100%;
+   padding: 60px;
+
+   display:flex;
+   margin-top: 30px;
+
+}
+
+ .box {
+  display: flex;
+  flex-direction: row;
+  margin-top: 350px;
+  width: 100%;
+
+}
+
+
+.parallax {
+  /* The image used */
+  background-image: url("https://assets.pewresearch.org/interactives/internet/2021/cancel-culture/point.png");
+
+  /* Full height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* .text{
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 30%;
+background-color: #e57c04;
+margin-top: 30px;
+margin-right: 100px;
+
+
+}
+
+/*
+#gallery {
+   line-height:0;
+   -webkit-column-count:4; /* split it into 5 columns */
+/*   -webkit-column-gap:4px; /* give it a 5px gap between columns */
+/*   -moz-column-count:4;
+   -moz-column-gap:4px;
+/*   column-count:4;
+   column-gap:4px;
+}
+*/
+
+
+.box2{
+
+  background-color: black;
+  width: 50%;
+  border: 3px solid #73AD21;
+
+}
+
+
+.box3{
+
+
+  border: 3px solid #73AD21;
+  background-color: black;
+  width: 50%;
+
+}
+
+.box4{
+  position: relative;
+
+  border: 3px solid #73AD21;
+  background-color: black;
+  width: 30%;
+
+}
+
+
+.box5{
+
+
+  border: 3px solid #73AD21;
+  background-color: black;
+  width: 50%;
+
+}
+
+.box6{
+
+  border: 3px solid #73AD21;
+  background-color: black;
+  width: 30%;
+
+}
+
+.box7{
+
+
+  border: 3px solid #73AD21;
+  background-color: black;
+  width: 30%;
+
+}
+.question1{
+
+  text-decoration: none;
+  font-size: 40px;
+  color: yellow;
+
+  display: inline-block;
+  animation: fadeIn linear 5s;
+  -webkit-animation: fadeIn linear 5s;
+  -moz-animation: fadeIn linear 5s;
+  -o-animation: fadeIn linear 5s;
+  -ms-animation: fadeIn linear 5s;
+}
+.question2{
+
+  text-decoration: none;
+  font-size: 40px;
+  color: yellow;
+
+  display: inline-block;
+  animation: fadeIn linear 10s;
+  -webkit-animation: fadeIn linear 10s;
+  -moz-animation: fadeIn linear 10s;
+  -o-animation: fadeIn linear 10s;
+  -ms-animation: fadeIn linear 10s;
+}
+.question3{
+
+  text-decoration: none;
+  font-size: 40px;
+  color: yellow;
+
+  display: inline-block;
+  animation: fadeIn linear 15s;
+  -webkit-animation: fadeIn linear 15s;
+  -moz-animation: fadeIn linear 15s;
+  -o-animation: fadeIn linear 15s;
+  -ms-animation: fadeIn linear 15s;
+}
+.question4{
+
+  text-decoration: none;
+  font-size: 40px;
+  color: yellow;
+
+  display: inline-block;
+  animation: fadeIn linear 20s;
+  -webkit-animation: fadeIn linear 20s;
+  -moz-animation: fadeIn linear 20s;
+  -o-animation: fadeIn linear 20s;
+  -ms-animation: fadeIn linear 20s;
+}
+.question5{
+
+  text-decoration: none;
+  font-size: 40px;
+  color: yellow;
+
+  display: inline-block;
+  animation: fadeIn linear 25s;
+  -webkit-animation: fadeIn linear 25s;
+  -moz-animation: fadeIn linear 25s;
+  -o-animation: fadeIn linear 25s;
+  -ms-animation: fadeIn linear 25s;
+}
+
+.question6{
+
+  text-decoration: none;
+  font-size: 40px;
+  color: yellow;
+
+  display: inline-block;
+  animation: fadeIn linear 30s;
+  -webkit-animation: fadeIn linear 30s;
+  -moz-animation: fadeIn linear 30s;
+  -o-animation: fadeIn linear 30s;
+  -ms-animation: fadeIn linear 30s;
+}
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+
+.nav{
+  text-align: left;
+  font-size: 52px;
+  color: yellow;
+  text-decoration: none;
+}
+
+
+.x{
+  animation: glitch .2s linear infinite;
+  width: 40%;
+  float: right;
+}
+
+
+
+
+
+
+.heading{
+
+  background-color: black;
+}
+
+
+
+
+
+.maingallery{
+
+display: flex;
+ flex-wrap:wrap;
+ padding: 5px;
+
+    justify-content: space-around;
+}
+.gallery{
+
+  position: relative;
+
+
+
+
+}
+.item {
+
+   margin: 5px;
+
+   width: 500px;
+   length:300px;
+  filter: grayscale();
+}
+
+.overlay {
+  position: absolute;
+ bottom: 100%;
+ left: 0;
+ right: 0;
+ background-color: brown;
+ overflow: hidden;
+ width: 100%;
+ height:0;
+ transition: .5s ease;
+}
+
+.gallery:hover .overlay {
+  bottom: 0;
+ height: 100%;
+}
+
+.why {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+
+.eye2{
+
+  text-align: center;
+  width: 220px;
+  length: 220px;
+  border-radius: 150px;
+  float: right;
+
+}
+
+.eye3{
+
+  text-align: center;
+  width: 220px;
+  length: 220px;
+  border-radius: 150px;
+  float: left;
+
+}
+
+.nav1{
+  background-color: black;
+  font-size: 90px;
+  float: right;
+
+  color: red;
+  filter: none;
+
+}
+
+@media (max-aspect-ratio: 1/1) {
+  li {
+    height: 90vh;
+  }
+}
+
+
+.eyebox{
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.eye{
+  text-align: center;
+  width: 220px;
+  length: 220px;
+  border-radius: 150px;
+
+}
+
+.link{
+  display: flex;
+  background-color: black;
+
+
+}
+
+.footer{
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+
+}
+
+.textbottom{
+
+  font-size: 70px;
+}
+
+
+.eye {
+  animation: fadeIn 20s;
+  -webkit-animation: fadeIn 20s;
+  -moz-animation: fadeIn 20s;
+  -o-animation: fadeIn 20s;
+  -ms-animation: fadeIn 20s;
+}
+.eye2 {
+  animation: fadeIn 20s;
+  -webkit-animation: fadeIn 20s;
+  -moz-animation: fadeIn 20s;
+  -o-animation: fadeIn 20s;
+  -ms-animation: fadeIn 20s;
+}
+
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+
+}
